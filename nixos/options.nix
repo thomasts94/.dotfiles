@@ -9,6 +9,8 @@
     XDG_CURRENT_DESKTOP = "Hyprland";
    	XDG_SESSION_DESKTOP = "Hyprland";
    	XDG_SESSION_TYPE = "wayland";
+   	EDITOR = "micro";
+   	TERMINAL = "alacritty";
    };
    #XDG
    
@@ -38,7 +40,12 @@
    clean = "sudo nix-collect-garbage -d";
    hp = "nano ~/.config/hypr/hyprland.conf";
    };
-   
+
+   # Virtualization
+   virtualisation.libvirtd.enable = true;
+   programs.dconf.enable = true; # virt-manager requires dconf to remember settings
+   users.users.thomas.extraGroups = [ "libvirtd" ];
+
    #Polkit
    systemd = {
      user.services.polkit-gnome-authentication-agent-1 = {

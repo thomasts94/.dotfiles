@@ -13,6 +13,9 @@ programs.hyprland = {
      atool
      neovim
      unzip
+     qemu
+     virt-manager
+     virglrenderer
      gvfs
      pkgs.pcsx2
      python311
@@ -21,7 +24,7 @@ programs.hyprland = {
      inputs.nix-software-center.packages.${system}.nix-software-center
      brave
      wofi
-     kitty
+     linuxKernel.packages.linux_6_5.virtualbox
      wl-clipboard
      alacritty
      rofi-wayland
@@ -59,6 +62,7 @@ programs.hyprland = {
      pkgs.qt6Packages.qtstyleplugin-kvantum
     vscode-fhs
     mako
+    discord
      ];
  
   fonts.packages = with pkgs; [
