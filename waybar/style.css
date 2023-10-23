@@ -5,10 +5,10 @@
 }
 
 window#waybar {
-    background: transparent;
+    background: @theme_base_color;
     border-bottom: 1px solid @unfocused_borders;
-    border-radius: 50px;
-    color: @theme_text_color;
+    border-radius: 10px;
+    color: #e0e0e0;
 }
 
 window#waybar.hidden {
@@ -50,7 +50,7 @@ button:hover {
 #workspaces button {
     padding: 0 5px;
     background-color: transparent;
-    color: #edd5ad;
+    color: #e0e0e0;
 }
 
 #workspaces button:hover {
@@ -93,7 +93,7 @@ button:hover {
 
 
 #workspaces {
-    color: #edd5ad;
+    color: #e0e0e0;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -110,17 +110,17 @@ button:hover {
 	margin-left: 10px;
 }
 #clock {
-    color: #edd5ad;
+    color: #e0e0e0;
 }
 
 #battery {
     
-    color: #edd5ad;
+    color: #e0e0e0;
     margin-right: 5px;
 }
 
 #battery.charging, #battery.plugged {
-    color: #edd5ad;
+    color: #e0e0e0;
     
 }
 
@@ -147,37 +147,37 @@ label:focus {
 
 #cpu {
     
-    color: #edd5ad;
+    color: #e0e0e0;
 }
 
 #memory {
-    color: #edd5ad;
+    color: #e0e0e0;
 }
 
 #disk {
-   color: #edd5ad;
+   color: #e0e0e0;
 }
 
 #backlight {
-    color: #edd5ad;
+    color: #e0e0e0;
 }
 
 #network {
-    color: #edd5ad;
+    color: #e0e0e0;
 }
 
 #network.disconnected {
-    color:#edd5ad;
+    color:#e0e0e0;
 }
 
 #pulseaudio {
     
-    color: #edd5ad;
+    color: #e0e0e0;
 }
 
 #pulseaudio.muted {
     
-    color: #edd5ad;
+    color: #e0e0e0;
 }
 
 #wireplumber {
@@ -225,12 +225,12 @@ label:focus {
 }
 
 #idle_inhibitor {
-    background-color: #2d3436;
+    background-color: transparent;
 }
 
 #idle_inhibitor.activated {
-    background-color: #ecf0f1;
-    color: #2d3436;
+    background-color: transparent;
+    color: #e0e0e0;
 }
 
 #mpd {
